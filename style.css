@@ -1,0 +1,135 @@
+@charset "utf-8";
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+.wrap{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+
+}
+header{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #ffffff; 
+}
+header h1{
+    text-align: center;
+    line-height: 200px;
+    font-size: 3em;
+    color: #000000;
+    margin: 0;
+}
+
+
+/* 📦 메뉴 컨테이너 (.menu) 스타일 */
+.menu {
+    /* 메뉴 전체 너비 설정 (필요에 따라 100% 또는 고정 값 사용) */
+    width: 100%; 
+    /* 헤더와 메뉴 간의 약간의 구분선/여백 */
+    padding: 10px 0; 
+    background-color: #ffffff; /* 배경색 설정 */
+    border-top: 1px solid #ddd; /* 얇은 구분선 */
+}
+
+/* 🍔 메인 메뉴 영역 (.main-menu) 스타일 */
+.main-menu {
+    /* 메뉴 내용을 중앙에 정렬하기 위해 Flexbox를 사용 */
+    display: flex;
+    justify-content: center; /* 메뉴 전체를 수평 중앙에 위치 */
+    width: 100%;
+    max-width: 1200px; /* 최대 너비를 지정하여 너무 넓어지는 것을 방지 (선택 사항) */
+    margin: 0 auto; /* max-width 사용 시 중앙 정렬을 위한 필수 속성 */
+}
+
+/* <ul> 리스트 스타일 */
+.main-menu ul {
+    /* 리스트 기본 스타일 제거 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    /* 항목들을 가로로 나열하기 위해 Flexbox 적용 */
+    display: flex; 
+    gap: 30px; /* 각 항목(li) 사이의 간격을 띄움 */
+}
+
+/* 📄 리스트 항목 (li) 스타일 */
+.main-menu li {
+    /* 텍스트가 잘 보이도록 정렬 */
+    text-align: center;
+}
+
+/* 🔗 링크 (a) 스타일 */
+.main-menu a {
+    /* 링크 밑줄 제거 */
+    text-decoration: none;
+    /* 폰트 스타일 */
+    font-size: 1.1em;
+    font-weight: 600;
+    /* 브랜딩 색상 적용 (이전 패턴 색상 사용) */
+    color: #000000; /* 보라색 */
+    
+    /* 클릭 영역 확보 및 여백 */
+    padding: 5px 10px;
+    display: block; /* padding 적용을 위해 block으로 변경 */
+    
+    /* 호버 효과를 위한 부드러운 전환 */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* ✨ 마우스 오버 (Hover) 효과 */
+.main-menu a:hover {
+    color: #018727; /* 텍스트 색상을 흰색으로 변경 */
+   
+    border-radius: 4px; /* 약간의 둥근 모서리 추가 */
+}
+
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.pattern {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#patternCanvas {
+    border: 1px solid #ccc;
+    filter: url(#grain-filter);
+    background: white;
+    display: block;
+}
+
+.pattern-controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 0 20px;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.pattern-controls label{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.pattern-controls {
+    justify-content: center;
+    margin-top: 50px;
+}
