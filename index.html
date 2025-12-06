@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <title>Document</title>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+    <h1>Recursive Variation</h1>
+</header>
+
+<div class="menu">
+    <div class="main-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="설명.html">explanation</a></li>
+                <li><a href="문의.html">inquiry</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- 🔥 패턴 컨트롤 UI 추가 -->
+<div class="pattern-controls">
+    <label>Color A <input id="colA" type="color" value="#7b78e0"></label>
+    <label>Color B <input id="colB" type="color" value="#78c878"></label>
+
+
+    <label><input id="invert" type="checkbox"> 색 반전</label>
+    <label><input id="gray" type="checkbox"> 흑백</label>
+
+    <button id="download">PNG 다운로드</button>
+</div>
+
+<!-- 🔥 패턴 캔버스 -->
+<div class="pattern">
+    <canvas id="patternCanvas"></canvas>
+</div>
+
+<footer></footer>
+</div>
+
+<script src="script/script.js"></script>
+</body>
+</html>

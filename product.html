@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/product.css">
+
+    <!-- Grain 필터 -->
+    <svg style="position:absolute; width:0; height:0;" aria-hidden="true">
+        <filter id="grain-filter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" result="noise"/>
+            <feComposite in="SourceGraphic" in2="noise" operator="arithmetic" k1="0" k2="1" k3="0.16" k4="0"/>
+        </filter>
+    </svg>
+
+    <title>Document</title>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+    <h1>Our Product</h1>
+</header>
+
+<div class="menu">
+    <div class="main-menu">
+        <nav>
+            <ul>
+                 <li><a href="index.html">home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="설명.html">about</a></li>
+                <li><a href="문의.html">inquiry</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="product">
+    <div class="pr1">
+        <img src="images/동글이 트레이.png" alt="상품 이미지">
+    <div class="product-info">
+        <h2 class="product-title">Round tray</h2>
+        <p class="product-price">₩ 29,900</p>
+
+        <p class="product-desc">
+            악세서리를 담을 수 있는 원형 트레이
+        </p>
+        </div>
+
+    </div>
+
+    <div class="pr2">
+        <img src="images/네모 트레이.png" alt="상품 이미지">
+    <div class="product-info2">
+        <h2 class="product-title">Square tray</h2>
+        <p class="product-price">₩ 29,900</p>
+
+        <p class="product-desc">
+            악세서리를 담을 수 있는 네모 트레이
+        </p>
+        </div>
+
+    </div>
+
+    <div class="pr3">
+        <img src="images/조명 갓.png" alt="상품 이미지">
+    <div class="product-info3">
+        <h2 class="product-title">lampshade</h2>
+        <p class="product-price">₩ 29,900</p>
+
+        <p class="product-desc">
+            예쁜 조명 갓
+        </p>
+        </div>
+
+    </div>
+
+
+</div>
+<footer></footer>
+</div>
+</body>
+</html>
