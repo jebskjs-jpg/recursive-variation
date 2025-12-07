@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="about.css">
+
+    <!-- Grain 필터 -->
+    <svg style="position:absolute; width:0; height:0;" aria-hidden="true">
+        <filter id="grain-filter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" result="noise"/>
+            <feComposite in="SourceGraphic" in2="noise" operator="arithmetic" k1="0" k2="1" k3="0.16" k4="0"/>
+        </filter>
+    </svg>
+
+    <title>About</title>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+    <h1>About</h1>
+</header>
+
+<div class="menu">
+    <div class="main-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="inquiry.html">inquiry</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="about">
+    <h1>Geometric Gradient Pattern</h1>
+
+    <div class="pattern-img">
+        <img src="pattern.png" alt="Pattern Image" style="width:100%; display:block;">
+    </div>
+
+    <h2 class="section-title">1. 디자인 개요</h2>
+    <p>
+        이 패턴은 정교한 기하학적 그리드 구조와 부드러운 파스텔 그라데이션이 결합된 현대적 스타일의 디자인입니다.
+        각 셀은 규칙적인 반복을 유지하면서도 색과 명도의 변화로 인해 시각적인 리듬감을 형성하며,
+        정적인 패턴 속에 부드러운 움직임을 느낄 수 있습니다.
+    </p>
+
+    <h2 class="section-title">2. 색채 구성</h2>
+    <p>
+        이 패턴에는 라벤더 계열의 연보라색과 은은한 그린 톤이 사용되었으며,
+        두 색은 따뜻함과 차가움을 동시에 가지고 있어 안정적인 균형감을 줍니다.
+        전체적으로 밝고 포근한 분위기를 형성하며, 시각적으로 편안한 인상을 전달합니다.
+    </p>
+
+    <h2 class="section-title">3. 구조적 특징</h2>
+    <p>
+        패턴은 기본적으로 정사각형 모듈을 바탕으로 구성되며,
+        그리드가 세로·가로 방향으로 확장되면서 반복과 변주가 나타나도록 설계되었습니다.
+        중앙에는 더 큰 블록이 배치되어 전체 레이아웃에 집중점을 만들어줍니다.
+    </p>
+
+    <div class="highlight-box">
+        <strong>이 패턴의 가장 큰 매력:</strong><br>
+        규칙적인 기하학의 안정성과 부드러운 그라데이션의 흐름이 겹쳐져  
+        ‘날카로움 속의 따뜻함’이라는 두 가지 대비적 미감을 동시에 담고 있습니다.
+    </div>
+
+    <h2 class="section-title">4. 활용 가능성</h2>
+    <p>
+        이 패턴은 포스터, 패키지 디자인, 웹 배경, 텍스타일 등 다양한 영역에 사용될 수 있습니다.
+    </p>
+
+</div> <!-- about -->
+</div> <!-- wrap -->
+</body>
+</html>

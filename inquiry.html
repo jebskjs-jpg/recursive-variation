@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="inquiry.css">
+
+    <!-- Grain 필터 -->
+    <svg style="position:absolute; width:0; height:0;" aria-hidden="true">
+        <filter id="grain-filter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" result="noise"/>
+            <feComposite in="SourceGraphic" in2="noise" operator="arithmetic" k1="0" k2="1" k3="0.16" k4="0"/>
+        </filter>
+    </svg>
+
+    <title>Inquiry</title>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+    <h1>Inquiry</h1>
+</header>
+
+<div class="menu">
+    <div class="main-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="inquiry.html">inquiry</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="contact-section" id="contact">
+    <h2 class="section-title">문의하기</h2>
+
+    <p class="contact-desc">
+        패턴 디자인, 프로젝트 관련, 구매 문의는 아래 양식으로 보내주세요.
+    </p>
+
+    <form class="contact-form">
+        <div class="form-row">
+            <input type="text" placeholder="이름" required>
+            <input type="email" placeholder="이메일" required>
+        </div>
+
+        <textarea placeholder="문의 내용을 작성해주세요" required></textarea>
+
+        <button type="submit" class="contact-btn">문의 보내기</button>
+    </form>
+</div>
+
+</div> <!-- wrap -->
+</body>
+</html>
